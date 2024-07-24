@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scribble</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="./script.js"></script>
+</head>
+<body>
+
+
+    <div id="playground">
+
+        <div id="leaderboard">
+            <h2>Leaderboard</h2>
+            
+        </div>
+
+        <div id="board-container">
+            <div id="word-container"></div>
+
+            <div id="drawingArea">
+                <div id="board">
+                    <canvas id="canvas" width="600" height="400"></canvas>
+                </div>
+                <div id="controls">
+                    <button id="clearbtn"> Clear Board </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="message-container">
+            <form id="send-container" action="">
+                <input type="text" name="message" id="message-input" placeholder="Make a Guess">
+                <button type="submit" id="send-button">Send</button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
